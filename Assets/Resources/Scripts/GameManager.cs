@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour {
         while (true) {
             ticker++; 
             Debug.Log("tick");
-            if (ticker == 2) {
+            if (ticker % 10 == 0) {
                 MoveButtons();
             }
             TickSkills();
@@ -47,7 +47,6 @@ public class GameManager : MonoBehaviour {
 
     void TickSkills() {
         foreach (GameObject s in skills) {
-            Debug.Log(s);
             skill sk = s.GetComponent<skill>();
             if (sk != null)
                 sk.Tick();
