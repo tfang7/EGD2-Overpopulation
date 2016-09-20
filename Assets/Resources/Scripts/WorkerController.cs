@@ -13,13 +13,13 @@ public class WorkerController : MonoBehaviour {
     public Text text;
 	// Use this for initialization
 	void Start () {
-        image.fillAmount = slider.value;
         popManager = GameObject.Find("PopulationController").GetComponent<PopulationManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         updateSlider();
+
     }
     void convertRange(float originalStart, float originalEnd, float newStart, float newEnd,float value)
     {
@@ -36,6 +36,10 @@ public class WorkerController : MonoBehaviour {
     {
         float population = popManager.unemployedPopulation;
         float maxAllowed = slider.value + population;
+        if (slider.value >= maxAllowed)
+        {
+            slider.value = maxAllowed;
+        }
         slider.maxValue = popManager.totalPopulation;
         convertRange(slider.minValue, slider.maxValue, 0f, 1f, slider.value);
         text.text = Mathf.RoundToInt(slider.value).ToString();
