@@ -11,6 +11,7 @@ public class WorkerController : MonoBehaviour {
     public Image image;
     public PopulationManager popManager;
     public Text text;
+    public int populationPercentage;
 	// Use this for initialization
 	void Start () {
         popManager = GameObject.Find("PopulationController").GetComponent<PopulationManager>();
@@ -34,14 +35,13 @@ public class WorkerController : MonoBehaviour {
     }
     public void updateSlider()
     {
+        popManager.calculateTotalWorkers();
         float population = popManager.unemployedPopulation;
-        float maxAllowed = slider.value + population;
-        if (slider.value >= maxAllowed)
-        {
-            slider.value = maxAllowed;
-        }
-        slider.maxValue = popManager.totalPopulation;
+        float maxAllowed = slider.value + popManager.unemployedPopulation;
+
+        slider.maxValue = maxAllowed;
         convertRange(slider.minValue, slider.maxValue, 0f, 1f, slider.value);
+        populationPercentage = Mathf.RoundToInt((slider.value / popManager.totalPopulation) * 100.0f);
         text.text = Mathf.RoundToInt(slider.value).ToString();
     }
 }

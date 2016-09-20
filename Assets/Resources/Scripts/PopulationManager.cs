@@ -38,7 +38,6 @@ public class PopulationManager : MonoBehaviour {
         totalPopulation += (int)Mathf.Ceil(growthRate * Time.deltaTime);
         setText();
         calculateTotalWorkers();
-        // Debug.Log(totalPopulation);
     }
     void setPopulationText()
     {
@@ -64,15 +63,16 @@ public class PopulationManager : MonoBehaviour {
         }
         growthRateText.text = "Growth Rate: " + growthRate.ToString();
     }
-    void calculateTotalWorkers()
+    public float calculateTotalWorkers()
     {
-        float workPopulation = 0;
+        workPopulation = 0;
         for (int i = 0; i < sliders.Length; i++)
         {
             workPopulation += sliders[i].value;
         }
         unemployedPopulation = (totalPopulation - workPopulation);
         Debug.Log(unemployedPopulation);
+        return unemployedPopulation;
     }
 
 }
