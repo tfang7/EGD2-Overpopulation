@@ -20,7 +20,6 @@ public class WorkerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         updateSlider();
-
     }
     void convertRange(float originalStart, float originalEnd, float newStart, float newEnd,float value)
     {

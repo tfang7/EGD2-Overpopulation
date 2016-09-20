@@ -9,10 +9,9 @@ public class skill : MonoBehaviour {
     public bool employmentBool;
     public PopulationManager popManager;
 
-    public float sanitationPercentage;
+    private float sanitationPercentage;
     // Use this for initialization
     void Start () {
-      //  Debug.Log(image.fillAmount);
         image.fillAmount = 0.0f;
 	}
 	
