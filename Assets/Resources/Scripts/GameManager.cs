@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     public GameObject populationController;
     PopulationManager populationManager;
     public int tickrate = 1;
+    Vector3 bTarget;
 
     float v = 0f;
     bool buttonsActive = false;
@@ -15,9 +16,9 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        bTarget = new Vector3(-12, -230, 0);
         populationManager = populationController.GetComponent<PopulationManager>();
         StartCoroutine("Tick");
-        GenerateButtons();
     }
 
     // Update is called once per frame
@@ -27,22 +28,22 @@ public class GameManager : MonoBehaviour {
 
     IEnumerator GenerateButtons() {
         Debug.Log("generating buttons");
-        if (buttonsActive) {
-            foreach (GameObject button in buttons) {
-                float newPos = Mathf.SmoothDamp(button.transform.position.y, button.transform.position.y - 50, ref v, .2f);
-                button.transform.position = new Vector3(button.transform.position.x, newPos, button.transform.position.z);
+        while (buttons[0].transform.position.y != bTarget.y) {
+            if (buttonsActive) {
+                foreach (GameObject button in buttons) {
+                    button.transform.position = new Vector3(button.transform.position.x, button.transform.position.y - 50, 0);
+                    float newPos = Mathf.SmoothDamp(button.transform.position.y, bTarget.y, ref v, .2f);
+                    button.transform.position = new Vector3(button.transform.position.x, newPos, button.transform.position.z);
+                }
             }
-            foreach (GameObject button in buttons) {
-                float newPos = Mathf.SmoothDamp(button.transform.position.y, button.transform.position.y + 50, ref v, .2f);
-                button.transform.position = new Vector3(button.transform.position.x, newPos, button.transform.position.z);
+            else {
+                foreach (GameObject button in buttons) {
+                    float newPos = Mathf.SmoothDamp(button.transform.position.y, bTarget.y - 50, ref v, .2f);
+                    button.transform.position = new Vector3(button.transform.position.x, newPos, button.transform.position.z);
+                }
             }
         }
-        else {
-            foreach (GameObject button in buttons) {
-                float newPos = Mathf.SmoothDamp(button.transform.position.y, button.transform.position.y + 50, ref v, .2f);
-                button.transform.position = new Vector3(button.transform.position.x, newPos, button.transform.position.z);
-            }
-        }
+        yield return new WaitForEndOfFrame();
     }
 
     IEnumerator Tick() {
