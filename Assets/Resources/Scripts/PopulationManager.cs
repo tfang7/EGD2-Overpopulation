@@ -56,8 +56,8 @@ public class PopulationManager : MonoBehaviour {
     void setText()
     {
         populationText.text = totalPopulation.ToString();
-        birthRateText.text = "Birth Rate:" + birthRate.ToString();
-        deathRateText.text = "Death Rate:" + deathRate.ToString();
+        birthRateText.text = birthRate.ToString();
+        deathRateText.text = deathRate.ToString();
     }
     void calculateGrowthRate()
     {
@@ -69,7 +69,7 @@ public class PopulationManager : MonoBehaviour {
         {
             growthRateText.color = Color.green;
         }
-        growthRateText.text = "Growth Rate: " + growthRate.ToString();
+        growthRateText.text = growthRate.ToString();
     }
     void calculateDeathRate()
     {
