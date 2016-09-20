@@ -14,9 +14,11 @@ public class PopulationManager : MonoBehaviour {
     public float deathRate;
     public float growthRate;
 
-    public int totalPopulation;
-    public int workPopulation;
-    
+    public float totalPopulation;
+    public float workPopulation;
+    public float unemployedPopulation;
+
+    public Slider[] sliders;
 	// Use this for initialization
 	void Start () {
         totalPopulation = 100;
@@ -32,10 +34,10 @@ public class PopulationManager : MonoBehaviour {
     void Update () {
         birthRate = adjustRate(birthRate, Random.Range(1,100) * 1/3);
         deathRate += 10;
-        Debug.Log(birthRate);
         calculateGrowthRate();
         totalPopulation += (int)Mathf.Ceil(growthRate * Time.deltaTime);
         setText();
+        calculateTotalWorkers();
         // Debug.Log(totalPopulation);
     }
     void setPopulationText()
@@ -61,7 +63,16 @@ public class PopulationManager : MonoBehaviour {
             growthRateText.color = Color.green;
         }
         growthRateText.text = "Growth Rate: " + growthRate.ToString();
-        
+    }
+    void calculateTotalWorkers()
+    {
+        float workPopulation = 0;
+        for (int i = 0; i < sliders.Length; i++)
+        {
+            workPopulation += sliders[i].value;
+        }
+        unemployedPopulation = (totalPopulation - workPopulation);
+        Debug.Log(unemployedPopulation);
     }
 
 }

@@ -22,7 +22,7 @@ public class StatManager : MonoBehaviour {
 
             if (statImage.fillAmount <= 0f) statImage.fillAmount = 1f;
 
-            statImage.fillAmount -= fillRate * Time.deltaTime;
+          //  statImage.fillAmount -= fillRate * Time.deltaTime;
             
             if (statImage.GetComponentInChildren<Text>()) statImage.GetComponentInChildren<Text>().text = (Mathf.RoundToInt( Mathf.Clamp01(populationStats[i].fillAmount) * 100)).ToString();
 

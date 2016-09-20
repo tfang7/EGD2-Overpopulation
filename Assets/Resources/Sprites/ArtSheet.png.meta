@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: acd433a76b752fb489ad49332a70dea4
+timeCreated: 1474381914
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ArtSheet_0
+    21300002: ArtSheet_1
+    21300004: ArtSheet_2
+    21300006: ArtSheet_3
+    21300008: ArtSheet_4
+    21300010: ArtSheet_5
+    21300012: ArtSheet_6
+    21300014: ArtSheet_7
+    21300016: ArtSheet_8
+    21300018: ArtSheet_9
+    21300020: ArtSheet_10
+    21300022: ArtSheet_11
+    21300024: ArtSheet_12
+    21300026: ArtSheet_13
+    21300028: ArtSheet_14
+    21300030: ArtSheet_15
+    21300032: ArtSheet_16
+    21300034: ArtSheet_17
+    21300036: ArtSheet_18
+    21300038: ArtSheet_19
+    21300040: ArtSheet_20
+    21300042: ArtSheet_21
+    21300044: ArtSheet_22
+    21300046: ArtSheet_23
+    21300048: ArtSheet_24
+    21300050: ArtSheet_25
+    21300052: ArtSheet_26
+    21300054: ArtSheet_27
+    21300056: ArtSheet_28
+    21300058: ArtSheet_29
+    21300060: ArtSheet_30
+    21300062: ArtSheet_31
+    21300064: ArtSheet_32
+    21300066: ArtSheet_33
+    21300068: ArtSheet_34
+    21300070: ArtSheet_35
+    21300072: ArtSheet_36
+    21300074: ArtSheet_37
+    21300076: ArtSheet_38
+    21300078: ArtSheet_39
+    21300080: ArtSheet_40
+    21300082: ArtSheet_41
+    21300084: ArtSheet_42
+    21300086: ArtSheet_43
+    21300088: ArtSheet_44
+    21300090: ArtSheet_45
+    21300092: ArtSheet_46
+    21300094: ArtSheet_47
+    21300096: ArtSheet_48
+    21300098: ArtSheet_49
+    21300100: ArtSheet_50
+    21300102: ArtSheet_51
+    21300104: ArtSheet_52
+    21300106: ArtSheet_53
+    21300108: ArtSheet_54
+    21300110: ArtSheet_55
+    21300112: ArtSheet_56
+    21300114: ArtSheet_57
+    21300116: ArtSheet_58
+    21300118: ArtSheet_59
+    21300120: ArtSheet_60
+    21300122: ArtSheet_61
+    21300124: ArtSheet_62
+    21300126: ArtSheet_63
+    21300128: ArtSheet_64
+    21300130: ArtSheet_65
+    21300132: ArtSheet_66
+    21300134: ArtSheet_67
+    21300136: ArtSheet_68
+    21300138: ArtSheet_69
+    21300140: ArtSheet_70
+    21300142: ArtSheet_71
+    21300144: ArtSheet_72
+    21300146: ArtSheet_73
+    21300148: ArtSheet_74
+    21300150: ArtSheet_75
+    21300152: ArtSheet_76
+    21300154: ArtSheet_77
+    21300156: ArtSheet_78
+    21300158: ArtSheet_79
+    21300160: ArtSheet_80
+    21300162: ArtSheet_81
+    21300164: ArtSheet_82
+    21300166: ArtSheet_83
+    21300168: ArtSheet_84
+    21300170: ArtSheet_85
+    21300172: ArtSheet_86
+    21300174: ArtSheet_87
+    21300176: ArtSheet_88
+    21300178: ArtSheet_89
+    21300180: ArtSheet_90
+    21300182: ArtSheet_91
+    21300184: ArtSheet_92
+    21300186: ArtSheet_93
+    21300188: ArtSheet_94
+    21300190: ArtSheet_95
+    21300192: ArtSheet_96
+    21300194: ArtSheet_97
+    21300196: ArtSheet_98
+    21300198: ArtSheet_99
+    21300200: ArtSheet_100
+    21300202: ArtSheet_101
+    21300204: ArtSheet_102
+    21300206: ArtSheet_103
+    21300208: ArtSheet_104
+    21300210: ArtSheet_105
+    21300212: ArtSheet_106
+    21300214: ArtSheet_107
+    21300216: ArtSheet_108
+    21300218: ArtSheet_109
+    21300220: ArtSheet_110
+    21300222: ArtSheet_111
+    21300224: ArtSheet_112
+    21300226: ArtSheet_113
+    21300228: ArtSheet_114
+    21300230: ArtSheet_115
+    21300232: ArtSheet_116
+    21300234: ArtSheet_117
+    21300236: ArtSheet_118
+    21300238: ArtSheet_119
+    21300240: ArtSheet_120
+    21300242: ArtSheet_121
+    21300244: ArtSheet_122
+    21300246: ArtSheet_123
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ArtSheet_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 867
+        width: 135
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_1
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 860
+        width: 135
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_2
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 858
+        width: 135
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 850
+        width: 198
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_4
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 611
+        width: 164
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 611
+        width: 145
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_7
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 571
+        width: 237
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_9
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 598
+        width: 113
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 603
+        width: 145
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 593
+        width: 212
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
