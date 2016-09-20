@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
     PopulationManager populationManager;
     public int tickrate = 1;
 
+    public GameObject[] buttons;
+
 	// Use this for initialization
 	void Start () {
         populationManager = populationController.GetComponent<PopulationManager>();
