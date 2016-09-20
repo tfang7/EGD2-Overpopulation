@@ -10,7 +10,7 @@ public class PopulationManager : MonoBehaviour {
     private Text birthRateText;
     private Text growthRateText;
 
-    public float  birthRate;
+    public float birthRate;
     public float deathRate;
     public float growthRate;
 
@@ -18,27 +18,34 @@ public class PopulationManager : MonoBehaviour {
     public float workPopulation;
     public float unemployedPopulation;
 
+    public GameObject growthR;
+    public GameObject deathR;
+    public GameObject populationR;
+    public GameObject birthR;
+
     public Slider[] sliders;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         totalPopulation = 100;
         birthRate = 100;
         deathRate = 0;
         growthRate = 0f;
-        populationText = GameObject.Find("populationCounter").GetComponent<Text>();
-        deathRateText = GameObject.Find("deathRate").GetComponent<Text>();
-        birthRateText = GameObject.Find("birthRate").GetComponent<Text>();
-        growthRateText = GameObject.Find("growthRate").GetComponent<Text>();
+        populationText = populationR.GetComponent<Text>();
+        deathRateText = deathR.GetComponent<Text>();
+        birthRateText = birthR.GetComponent<Text>();
+        growthRateText = growthR.GetComponent<Text>();
+
     }
     // Update is called once per frame
-    void Update () {
-        birthRate = adjustRate(birthRate, Random.Range(1,100) * 1/3);
+    public void Tick() {
+        birthRate = adjustRate(birthRate, Random.Range(1, 100) * 1 / 3);
         deathRate += 10;
         calculateGrowthRate();
-        totalPopulation += (int)Mathf.Ceil(growthRate * Time.deltaTime);
+        totalPopulation += (int) Mathf.Ceil(growthRate * Time.deltaTime);
         setText();
         calculateTotalWorkers();
     }
+
     void setPopulationText()
     {
             

@@ -17,9 +17,8 @@ public class skill : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        if (name.Contains("Employment"))
-        {
+    public void Tick() {
+        if (name.Contains("Employment")) {
             image.fillAmount = popManager.workPopulation / popManager.totalPopulation * 1.0f;
         }
         else if (name.Contains("Sanitation")) {
@@ -29,12 +28,12 @@ public class skill : MonoBehaviour {
             image.fillAmount = sanitationPercentage / (stats.Count);
 
         }
-        else
-        {
+        else {
             image.fillAmount = worker.populationPercentage / 100.0f;
         }
         //   Debug.Log(worker.populationPercentage/100.0f);
     }
+
     void calculateSanitation(GameObject go)
     {
         if (go.name == "statSan") return;
