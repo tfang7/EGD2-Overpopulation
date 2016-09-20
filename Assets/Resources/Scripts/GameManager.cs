@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour {
     IEnumerator GenerateButtons() {
         Debug.Log("generating buttons");
         while (buttons[0].transform.position.y != bTarget.y) {
-            if (buttonsActive) {
+            if (buttonsActive) { 
                 foreach (GameObject button in buttons) {
                     button.transform.position = new Vector3(button.transform.position.x, button.transform.position.y - 50, 0);
                     float newPos = Mathf.SmoothDamp(button.transform.position.y, bTarget.y, ref v, .2f);
