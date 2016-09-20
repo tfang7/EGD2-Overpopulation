@@ -5,10 +5,10 @@ using System.Collections;
 public class PopulationManager : MonoBehaviour {
 
 
-    private Text populationText;
-    private Text deathRateText;
-    private Text birthRateText;
-    private Text growthRateText;
+    public Text populationText;
+    public Text deathRateText;
+    public Text birthRateText;
+    public Text growthRateText;
 
     public float  birthRate;
     public float deathRate;
@@ -25,10 +25,6 @@ public class PopulationManager : MonoBehaviour {
         birthRate = 100;
         deathRate = 0;
         growthRate = 0f;
-        populationText = GameObject.Find("populationCounter").GetComponent<Text>();
-        deathRateText = GameObject.Find("deathRate").GetComponent<Text>();
-        birthRateText = GameObject.Find("birthRate").GetComponent<Text>();
-        growthRateText = GameObject.Find("growthRate").GetComponent<Text>();
     }
     // Update is called once per frame
     void Update () {
