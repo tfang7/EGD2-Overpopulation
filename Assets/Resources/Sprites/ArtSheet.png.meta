@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: acd433a76b752fb489ad49332a70dea4
-timeCreated: 1474381914
+timeCreated: 1474415363
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -185,7 +185,7 @@ TextureImporter:
         width: 135
         height: 183
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -198,7 +198,7 @@ TextureImporter:
         width: 135
         height: 183
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -211,7 +211,7 @@ TextureImporter:
         width: 135
         height: 183
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -224,7 +224,7 @@ TextureImporter:
         width: 198
         height: 198
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -232,12 +232,12 @@ TextureImporter:
       name: ArtSheet_4
       rect:
         serializedVersion: 2
-        x: 53
-        y: 611
-        width: 164
-        height: 183
+        x: 1027
+        y: 824
+        width: 509
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -245,36 +245,36 @@ TextureImporter:
       name: ArtSheet_5
       rect:
         serializedVersion: 2
+        x: 53
+        y: 611
+        width: 164
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_6
+      rect:
+        serializedVersion: 2
         x: 304
         y: 611
         width: 145
         height: 176
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ArtSheet_7
+      name: ArtSheet_8
       rect:
         serializedVersion: 2
-        x: 520
-        y: 571
-        width: 237
-        height: 245
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ArtSheet_9
-      rect:
-        serializedVersion: 2
-        x: 833
-        y: 598
-        width: 113
-        height: 193
+        x: 541
+        y: 590
+        width: 201
+        height: 198
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,12 +284,12 @@ TextureImporter:
       name: ArtSheet_10
       rect:
         serializedVersion: 2
-        x: 1077
-        y: 603
-        width: 145
-        height: 176
+        x: 833
+        y: 598
+        width: 113
+        height: 193
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -297,12 +297,142 @@ TextureImporter:
       name: ArtSheet_11
       rect:
         serializedVersion: 2
+        x: 1077
+        y: 603
+        width: 145
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_12
+      rect:
+        serializedVersion: 2
         x: 1303
         y: 593
         width: 212
         height: 212
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 1280
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 461
+        width: 61
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 461
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 461
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 405
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 405
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 407
+        width: 61
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 347
+        width: 63
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArtSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 350
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
