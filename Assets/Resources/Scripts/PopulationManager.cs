@@ -22,7 +22,6 @@ public class PopulationManager : MonoBehaviour {
     public GameObject deathR;
     public GameObject populationR;
     public GameObject birthR;
-
     public Slider[] sliders;
 	// Use this for initialization
 	void Awake () {
@@ -38,7 +37,7 @@ public class PopulationManager : MonoBehaviour {
     }
     // Update is called once per frame
     public void Tick() {
-        birthRate = adjustRate(birthRate, Random.Range(1, 100) * 1 / 3);
+       // birthRate = adjustRate(birthRate, Random.Range(1, 100) * 1 / 3);
         deathRate += 10;
         calculateGrowthRate();
         totalPopulation += (int) Mathf.Ceil(growthRate * Time.deltaTime);
@@ -62,13 +61,19 @@ public class PopulationManager : MonoBehaviour {
     }
     void calculateGrowthRate()
     {
-        growthRate = birthRate - deathRate;
+        float difference = birthRate - deathRate;
+        growthRate = (workPopulation / totalPopulation) * Mathf.Exp(0.01f);
+        birthRate = Mathf.Ceil(growthRate);
         growthRateText.color = Color.red;
         if (growthRate > 0)
         {
             growthRateText.color = Color.green;
         }
         growthRateText.text = "Growth Rate: " + growthRate.ToString();
+    }
+    void calculateDeathRate()
+    {
+
     }
     public float calculateTotalWorkers()
     {
