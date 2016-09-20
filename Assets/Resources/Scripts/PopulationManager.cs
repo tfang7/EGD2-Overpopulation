@@ -71,7 +71,6 @@ public class PopulationManager : MonoBehaviour {
             workPopulation += sliders[i].value;
         }
         unemployedPopulation = (totalPopulation - workPopulation);
-        Debug.Log(unemployedPopulation);
         return unemployedPopulation;
     }
 
