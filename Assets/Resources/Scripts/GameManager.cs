@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
     public GameObject[] skills;
     public GameObject populationController;
     PopulationManager populationManager;
-    public int tickrate = 1;
+    public float tickrate = 1;
     Vector3 bTarget;
 
     float v = 0f;
