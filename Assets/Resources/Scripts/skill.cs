@@ -8,12 +8,15 @@ public class skill : MonoBehaviour {
     public Image image;
     public bool employmentBool;
     public PopulationManager popManager;
-    
+
     private float sanitationPercentage;
+
     // Use this for initialization
     void Start () {
         image.fillAmount = 0.0f;
-	}
+        sanitationPercentage = 0.0f;
+
+    }
 	
 	// Update is called once per frame
     public void Tick() {
@@ -26,7 +29,7 @@ public class skill : MonoBehaviour {
             sanitationPercentage = 0.0f;
             stats.ForEach(calculateSanitation);
             image.fillAmount = sanitationPercentage / (stats.Count);
-            float sanitationWeight = popManager.deathRate * 1.05f;
+            float sanitationWeight = popManager.deathRate * 0.05f;
         }
         else {
             image.fillAmount = worker.populationPercentage / 100.0f;

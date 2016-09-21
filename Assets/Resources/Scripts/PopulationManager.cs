@@ -23,11 +23,12 @@ public class PopulationManager : MonoBehaviour {
     public GameObject populationR;
     public GameObject birthR;
     public Slider[] sliders;
+    public skill[] skills;
 	// Use this for initialization
 	void Awake () {
         totalPopulation = 100;
-        birthRate = 100;
-        deathRate = 0;
+        birthRate = 3;
+        deathRate = 1;
         growthRate = 0f;
         populationText = populationR.GetComponent<Text>();
         deathRateText = deathR.GetComponent<Text>();
@@ -38,9 +39,9 @@ public class PopulationManager : MonoBehaviour {
     // Update is called once per frame
     public void Tick() {
        // birthRate = adjustRate(birthRate, Random.Range(1, 100) * 1 / 3);
-        deathRate += 10;
         calculateGrowthRate();
-        totalPopulation += (int) Mathf.Ceil(growthRate * Time.deltaTime);
+     //   totalPopulation -= deathRate;
+        totalPopulation += (int) Mathf.Ceil(birthRate);
         setText();
         calculateTotalWorkers();
     }
@@ -62,18 +63,18 @@ public class PopulationManager : MonoBehaviour {
     void calculateGrowthRate()
     {
         float difference = birthRate - deathRate;
-        growthRate = (workPopulation / totalPopulation) * Mathf.Exp(0.01f);
-        birthRate = Mathf.Ceil(growthRate);
+        growthRate = difference;
+       // birthRate = Mathf.Ceil(growthRate);
         growthRateText.color = Color.red;
         if (growthRate > 0)
         {
             growthRateText.color = Color.green;
         }
-        growthRateText.text = growthRate.ToString();
+        growthRateText.text =  Mathf.Floor(growthRate).ToString();
     }
     void calculateDeathRate()
     {
-
+        deathRate += Mathf.Floor(0.1f * Mathf.Exp(workPopulation / totalPopulation));
     }
     public float calculateTotalWorkers()
     {
@@ -83,7 +84,25 @@ public class PopulationManager : MonoBehaviour {
             workPopulation += sliders[i].value;
         }
         unemployedPopulation = (totalPopulation - workPopulation);
+        if (unemployedPopulation <= 0) unemployedPopulation = 0;
+        float unemployedRatio = 1.0f - (workPopulation / totalPopulation);
+      //  if (unemployedRatio <= 0f) deathRate = 0.0f;
+        
+        float employedRatio = (workPopulation / totalPopulation);
+      //  if (employedRatio <= 0f) deathRate = 2.0f;
+
+        //deathRate += Mathf.Floor(Mathf.Abs(employedRatio - unemployedRatio) * 1.05f) * (birthRate * 1.25f);
+        birthRate += Mathf.Ceil(Mathf.Abs(employedRatio * Mathf.Exp(employedRatio * 0.01f)));
+        float deathEquation = 1;
+        if (deathEquation >= birthRate)
+        {
+            deathEquation = birthRate / 2;
+        }
+        Debug.Log(deathEquation);
+        deathRate += deathEquation;
         return unemployedPopulation;
     }
+
+    
 
 }
